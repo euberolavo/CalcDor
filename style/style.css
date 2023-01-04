@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #004d95; */
+  background: rgb(9, 47, 82);
+  background: linear-gradient(146deg, rgba(9, 47, 82, 1) 16%, rgba(51, 127, 191, 1) 100%);
+  /* background: linear-gradient(313deg, rgba(9, 47, 82, 1) 16%, rgba(51, 127, 191, 1) 100%); */
+  width: 700;
+  height: 420;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-bottom: 25vh;
+}
+
+
+.principal {
+  display: grid;
+  grid-template-columns: 240px 275px 240px;
+}
+
+.principal-col {
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.item span {
+  color: #ffffff;
+}
+
+.item-dados {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-dados p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-dados span {
+  color: #ffffff;
+  justify-self: end;
+
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.input {
+  width: 68px;
+  height: 19px;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: 'Calibri', cursive;
+  font-weight: 800;
+}
+
+.combobox {
+  width: 68px;
+}
+
+.combobox-sexo {
+  width: 115px;
+}
+
+.carboplatina {
+  color: #ffffff;
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+  margin-top: 5px;
+}
+
+.carboplatina-porcentagem {
+  margin-right: 30px;
+}
+
+.info-div {
+  margin-top: 21px;
+}
+
+.infocalc {
+  color: #ffffff;
+  font-size: 0.5rem;
+  margin: 0;
+}
+
+.imagem {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  width: 180px;
+}
+
+.author {
+  color: #ffffff;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+}

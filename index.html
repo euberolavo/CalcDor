@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Calc D'Or</title>
+    <link rel="icon" href="./img/calcdor.ico">
+
+    <link rel="stylesheet" href="./style/style.css" />
+    
+    <script defer src="./js/script.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <section class="principal">
+        <div class="principal-col">
+          <p class="item">
+            <label for="" class="label">Altura (cm)</label>
+            <i></i>
+            <input type="number" class="altura input" />
+          </p>
+          <p class="item">
+            <label for="" class="label">Dosagem <span class="span-dosagem"></label>
+            <i></i>
+            <input type="number" class="dosagem input" />
+          </p>
+          <p class="item">
+            <label for="" class="label">Dosagem mg</span></label>
+            <span class="dosagemResult"></span>
+          </p>
+          <p class="item">
+            <label for="" class="label">AUC</label>
+            <i></i>
+            <input type="text" class="auc input" />
+          </p>
+          <p class="item">
+            <label for="" class="label">Creatinina</label>
+            <i></i>
+            <input type="text" class="creatinina input" />
+          </p>
+          <p class="item">
+            <label for="" class="label">Idade</label>
+            <i></i>
+            <input type="text" class="idade input" />
+          </p>
+          <p class="item">
+            <label for="" class="label">Clearance ml/min</label>
+            <i></i>
+            <span class="Clearance-valor" ></span>
+            <input type="number" class="clearance-input input" hidden disabled />
+          </p>
+          <p class="item">
+            <label for="" class="label">Carboplatina</label>
+            <span class="carboplatina-valor"></span>
+          </p>
+          <p class="carboplatina">
+            <span class="carboplatina-porcentagem carboplatina-porcentagem-positivo"></span>
+            <span class="carboplatina-porcent-valor-mais"></span>
+          </p>
+          <p class="carboplatina">
+            <span class="carboplatina-porcentagem carboplatina-porcentagem-negativo"></span>
+            <span class="carboplatina-porcent-valor-menos"></span>
+          </p>
+          <div class="info-div">
+            <p class="infocalc"> Superficie corpórea: Fórmula de DuBois </p>
+            <p class="infocalc"> Clearance de Creatinina: Fórmula de Cockcroft-Gault </p>
+            <p class="infocalc"> Dose de Carboplatina utilizando AUC: Fórmula de Calvert </p>
+          </div>
+        </div>
+        <div class="principal-col">
+          <p class="item">
+            <label for="" class="label">Peso (kg) </label>
+            <i></i>
+            <input type="text" class="peso input" />
+          </p>
+          <p class="item">
+            <label for="" class="label">Un. Medida</label>
+            <i></i>
+            <select name="select" class="combobox combobox-unidade-medida">
+              <option value="mg/m²" selected>mg/m²</option>
+              <option value="mg/kg">mg/kg</option>
+            </select>
+          </p>
+          <div class="item-dados">
+            <!-- Porcentagem de dosagem +X% -->
+            <p>
+              <span class="dif_dosagem_positivo dif_dosagem"></span>
+              <span class="dosagem-percent-mais"></span>
+            </p>
+            <p>
+              <!-- Porcentagem de dosagem -X% -->
+              <span class="dif-dosagem-negativo dif_dosagem"></span>
+              <span class="dosagem-percent-menos"></span>
+            </p>
+          </div>
+          <p class="item">
+            <label for="" class="label">Sexo</label>
+            <i></i>
+            <select name="select" class="combobox-sexo">
+              <option value="1" selected>Masculino</option>
+              <option value="0.85">Feminino</option>
+              <option value="0">Clearance Fixo</option>
+            </select>
+          </p>
+        </div>
+        <div class="principal-col">
+          <p class="item">
+            <label for="" class="label">SC</label>
+            <span class="sc"></span>
+          </p>
+          <p class="item ">
+            <label for="" class="label">Redução</label>
+            <i></i>
+            <select name="select" class="combobox combobox-reducao">
+              <option value="0" selected>0%</option>
+              <option value="5">5%</option>
+              <option value="10">10%</option>
+              <option value="15">15%</option>
+              <option value="20">20%</option>
+              <option value="25">25%</option>
+            </select>
+          </p>
+          <p class="item">
+            <label for="" class="label dif">Dif</label>
+            <i></i>
+            <select name="select" class="combobox combobox-dif">
+              <option value="5" selected>5%</option>
+              <option value="10">10%</option>
+              <option value="20">20%</option>
+            </select>
+          </p>
+        </div>
+        <img class="imagem" src="./img/OncologiaLogo.png" alt="Logo Oncologia" />
+        <p class="author">Desenvolvido por OncologiaD'or</p>
+      </section>
+    </div>
+  </body>
+</html>
