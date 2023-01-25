@@ -24,6 +24,7 @@ const dosagemPercentMais = document.querySelector('.dosagem-percent-mais');
 const dosagemPercentMenos = document.querySelector('.dosagem-percent-menos');
 const clearancevalor = document.querySelector('.Clearance-valor');
 
+
 let porcentagem = 5;
 let unidadeMedidaVal = 'mg/m²';
 let altura = '';
@@ -201,5 +202,64 @@ const calculos = () => {
     carboplatinaMenos = carboplatina - carboplatinaPercentual;
   }
 };
+
+// filtro de Input
+pesoInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+clearanceInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+alturaInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "," || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+idadeInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "," || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+dosagemInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+aucInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+scInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+creatininaInput.addEventListener("keypress", function (e) {
+  if (e.key === "." || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+});
+
+pesoInput.addEventListener("keypress", function (e) {
+
+  if (e.key === "." || e.key === "+" || e.key === "-") {
+    e.preventDefault();
+  }
+
+});
+
+
 
 renderCalculadora();
