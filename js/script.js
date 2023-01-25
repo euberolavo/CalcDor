@@ -203,7 +203,7 @@ const calculos = () => {
   }
 };
 
-// filtro de Input
+// filtro de Input (Não permite os caracteres ". , + -")
 pesoInput.addEventListener("keypress", function (e) {
   if (e.key === "." || e.key === "+" || e.key === "-") {
     e.preventDefault();
