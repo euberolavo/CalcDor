@@ -205,56 +205,56 @@ const calculos = () => {
 
 // filtro de Input (Não permite os caracteres ". , + -")
 pesoInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 clearanceInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 alturaInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "," || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "," || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 idadeInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "," || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "," || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 dosagemInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 aucInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 scInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 creatininaInput.addEventListener("keypress", function (e) {
-  if (e.key === "." || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 });
 
 pesoInput.addEventListener("keypress", function (e) {
 
-  if (e.key === "." || e.key === "+" || e.key === "-") {
+  if (e.key === "." || e.key === "+" || e.key === "-" || e.key === "e") {
     e.preventDefault();
   }
 
